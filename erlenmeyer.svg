@@ -1,0 +1,49 @@
+  <svg
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="1050" height="825"
+  viewBox="0 0 350 275"
+  onload="init()"
+  id="main"
+  >
+    <script xlink:href="shapes.js" ></script>
+    <script xlink:href="ruler.js" ></script>
+    <script xlink:href="measureline.js" ></script>
+    <script xlink:href="graph.js" ></script>
+    <script xlink:href="flask.js" ></script>
+    <script xlink:href="button.js" ></script>
+    <script xlink:href="tap.js" ></script>
+    <script xlink:href="flaskfiller.js" ></script>
+    <script>
+<![CDATA[
+
+	function init() {
+
+		var gr = document.getElementById('main');
+
+		system = flaskfiller({
+		  	x: 5,
+			y: 5,
+			flask: {
+				type: 'erlenmeyer',
+				top: 30,
+				bottom: 85,
+				max: 200,
+				height: 140,
+				top_skip: 5,
+				foot: false
+			},
+			configuration: {
+			  measurelines: true,
+			  graph: true,
+			  time: true,
+			  water_speed: 10
+			}
+		});
+
+		gr.appendChild( system.element );
+	};
+	]]>
+    </script>
+</svg>

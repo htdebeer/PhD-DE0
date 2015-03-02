@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Verdana', 'Helvetica', sans-serif;
+    font-size: 12pt;
+}
+
+header, article, nav, section, footer { display: block; }
+
+header {
+    text-align: center;
+    border-bottom: solid 1px black;
+    background-color: gold;
+}
+
+header h1 {
+    font-size: 26pt;
+}
+
+header h2 {
+    font-size: 24pt;
+}
+
+nav {
+    display: inline;
+    margin-right: 2ex;
+    padding-right: 1ex;
+    font-size: 10pt;
+    padding-bottom: 3ex;
+    padding-left: 1%;
+}
+
+nav h2 {
+    display: inline;
+    font-size: 10pt;
+    font-weight: bold;
+    padding-right: 0;
+    padding-left: 1ex;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: inline;
+    padding: 1ex;
+    margin-right: 1ex;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 1ex;
+}
+
+p {
+    text-align: justify;
+    text-indent: 2ex;
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+footer {
+    border-top: solid 1pt black;
+}
+
+footer p {
+    font-size: 75%;
+}
